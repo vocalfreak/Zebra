@@ -5,9 +5,7 @@ import string
 def get_valid_words(words):
     word = random.choice(words)
     while '-' in word or ' ' in word:
-        word = random.choice(words)
-
-    return word.upper()
+        word = random.choice(word)
 
 def hangman():
     word = get_valid_words(words)
